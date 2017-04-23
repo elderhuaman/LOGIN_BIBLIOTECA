@@ -9,8 +9,44 @@
 
 </head>
 <body class="fondo-walpaper">
+    <div class="container">
+        <div class="row">
+        	<h2><span class="bbl">BIBLIOTECA</span> <span class="bbl2">INSTITUCIONAL</span></h2>
+        	 <h4>I.E Ofelia Velasquez Moreno - <span class="curs"> Tarapoto </span></h4>
+        </div>
+        <div class="row">
+        	<div class="formulario col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+    	    <div class="caja">
+    	     	<img src="img/1492948834_SEO_usability_audit_search_.png"  height="130">
+        	</div><br>
+    		<form action="as" method="get" name="login" id="login" >
 
 
+  				<div class="col-md-8 col-md-offset-2" >
+  				<div class="form-group" id="campo-user">
+    				<label class="control-label"  for="Usuario">USUARIO</label>
+    				<input type="text" class="form-control" name="user" placeholder="Ingrese su usuario" id="input-user" autocomplete="off">
+    				<span id="span-user"></span>
+
+  				</div>
+  				</div>
+
+  				<div class="col-md-8 col-md-offset-2" >
+  				<div class="form-group" id="campo-pass">
+    				<label class="control-label" for="Pass" >CONTRASEÑA</label>
+    				<input type="password" class="form-control" name="pass" placeholder="Ingrese su contraseña" id="input-pass" autocomplete="off">
+    				<span id="span-pass"></span>
+  				</div>
+  				</div>
+
+  				<div class="form-group col-md-8 col-md-offset-2">
+  				<button id="enviar" type="submit" class="entrar">ENTRAR</button>
+  				</div>
+    		</form>
+    		</div>
+        </div>
+
+    </div>
     <script>
 	(function(){
 
@@ -75,63 +111,14 @@
 		input_usuario.addEventListener("keypress", limpiarUser);
 		input_pass.addEventListener("keypress", limpiarPass);
 	}())
-
 	</script>
     <script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-
-	<SCRIPT  language=JavaScript>
-function go(){
-if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO'){
-        document.form.submit();
-    }
-    else{
-         alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
-    }
-}
-</SCRIPT>
-<form name=form action="TU_PAGINA_WEB.HTML">
-<P>Usuario:    <INPUT type=text name=login>
-<P>Contraseña: <INPUT type=password name=password>
-<INPUT onclick=go() type=button value=Acceder>
-
-        <div class="container">
-        <div class="row">
-        	<h2><span class="bbl">BIBLIOTECA</span> <span class="bbl2">INSTITUCIONAL</span> </h2>
-        	 <h4>I.E Ofelia Velasquez Moreno - <span class="curs"> Tarapoto </span></h4>
-        </div>
-        <div class="row">
-        	<div class="formulario col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
-    	    <div class="imagen">
-    	     	<img src="img/1492948834_SEO_usability_audit_search_.png"  height="130">
-        	</div><br>
-    		<form action="as" method="get" name="login" id="login" >
-
-
-  				<div class="col-md-8 col-md-offset-2" >
-  				<div class="form-group" id="campo-user">
-    				<label class="control-label"  for="Usuario">USUARIO</label>
-    				<input type="text" class="form-control" name="user" placeholder="Ingrese su usuario" id="input-user" autocomplete="off">
-    				<span id="span-user"></span>
-
-  				</div>
-  				</div>
-
-  				<div class="col-md-8 col-md-offset-2" >
-  				<div class="form-group" id="campo-pass">
-    				<label class="control-label" for="Pass" >CONTRASEÑA</label>
-    				<input type="password" class="form-control" name="pass" placeholder="Ingrese su contraseña" id="input-pass" autocomplete="off">
-    				<span id="span-pass"></span>
-  				</div>
-  				</div>
-
-  				<div class="form-group col-md-8 col-md-offset-2">
-  				<button id="enviar" type="submit" class="entrar">ENTRAR</button>
-  				</div>
-    		</form>
-    		</div>
-        </div>
-
-    </div>
 </body>
 </html>
+
+
+
+
+
+
