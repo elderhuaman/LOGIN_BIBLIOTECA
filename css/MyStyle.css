@@ -90,3 +90,9 @@ h4{
     background:#3ed661
 }
 
+.container{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
