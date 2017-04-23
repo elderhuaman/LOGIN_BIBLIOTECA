@@ -30,6 +30,7 @@ h4{
 .ins{
 
 }
+
 .fondo-walpaper{
    background: url(../img/Books-2.jpg) no-repeat fixed center;
    -webkit-background-size: cover;
@@ -42,7 +43,7 @@ h4{
 	z-index: 3;
 }
 .formulario{
-	background: #fdfdfd;
+	background-color: rgba(52, 73, 94, 0.7);
 	margin-top: 90px;
 	border-radius: 10px;
 	border-bottom: 4px #b51b1b solid;
@@ -78,3 +79,11 @@ h4{
 	font-weight: bold;
 
 }
+.control-label{
+    color: white
+}
+
+.imagen{
+    background:#3ed661
+}
+
