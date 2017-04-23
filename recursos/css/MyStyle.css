@@ -1,0 +1,80 @@
+@font-face {
+font-family: Exo2-ExtraBold;
+src: url(../fonts/Exo2-ExtraBold.otf);
+}
+html,body{
+	height:100%;
+    width:100%;
+    margin: 0px;
+	padding: 0px;
+
+	font-size: 15px;
+}
+h2{
+	font-family: Exo2-ExtraBold;
+	font-size: 50px;
+	color: #ffffff;
+	text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+h4{
+	font-family: Exo2-ExtraBold;
+	color: #ffffff;
+	text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+.bbl{
+	color: #8d8d8d;
+}
+.curs{
+	font-style: italic;
+}
+.ins{
+
+}
+.fondo-walpaper{
+   background: url(../img/Books-2.jpg) no-repeat fixed center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 100%;
+   width: 100% ;
+   text-align: center;
+	z-index: 3;
+}
+.formulario{
+	background: #fdfdfd;
+	margin-top: 90px;
+	border-radius: 10px;
+	border-bottom: 4px #b51b1b solid;
+	border-top: 4px #19913e solid;
+	height: 100%;
+	padding: 40px;
+}
+.icon{
+	background: #b3b4b3;
+	height: 150px;
+	width: 170px;
+	margin-top: -100px;
+	border-radius:200%;
+	border: #000 solid;
+}
+.entrar{
+	background: #d9534f;
+	height: 50px;
+	width: 100px;
+	border-radius: 10px;
+	border: 2px #cb403b solid;
+	color: #FFF;
+	font-weight: bold;
+
+}
+.entrar:hover{
+	background: #c74743;
+	height: 50px;
+	width: 100px;
+	border-radius: 10px;
+	border: 2px #cb403b solid;
+	color: #FFF;
+	font-weight: bold;
+
+}

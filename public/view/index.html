@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../../recursos/css/bootstrap.css">
+	<link rel="stylesheet" href="../../recursos/css/MyStyle.css">
+
+</head>
+<body class="fondo-walpaper">
+    <div class="container">
+        <div class="row">
+        	<h2><span class="bbl">BIBLIOTECA</span> INSTITUCIONAL</h2>
+        	 <h4>I.E Ofelia Velasquez Moreno - <span class="curs"> Tarapoto </span></h4>
+        </div>
+        <div class="row">
+        	<div class="formulario col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+    	    <div class="icon col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 ">
+    	     	<img src="../../recursos/img/16480.png"  height="130">
+        	</div><br><br><br><br>
+    		<form action="as" method="get" name="login" id="login" >
+
+
+  				<div class="col-md-8 col-md-offset-2" >
+  				<div class="form-group" id="campo-user">
+    				<label class="control-label"  for="Usuario">USUARIO</label>
+    				<input type="text" class="form-control" name="user" placeholder="Ingrese su usuario" id="input-user" autocomplete="off">
+    				<span id="span-user"></span>
+
+  				</div>
+  				</div>
+
+  				<div class="col-md-8 col-md-offset-2" >
+  				<div class="form-group" id="campo-pass">
+    				<label class="control-label" for="Pass" >CONTRASEÑA</label>
+    				<input type="password" class="form-control" name="pass" placeholder="Ingrese su contraseña" id="input-pass" autocomplete="off">
+    				<span id="span-pass"></span>
+  				</div>
+  				</div>
+
+  				<div class="form-group col-md-8 col-md-offset-2">
+  				<button id="enviar" type="submit" class="entrar">ENTRAR</button>
+  				</div>
+    		</form>
+    		</div>
+        </div>
+
+    </div>
+    <script>
+	(function(){
+
+		var form=document.getElementsByName("login")[0];
+		var elm=form.elements;
+		var btn_enviar=document.getElementById("enviar");
+	    var input_usuario=document.getElementById("input-user");
+		var input_pass=document.getElementById("input-pass");
+
+		/*Para el Error*/
+		var icon_error="<span class='glyphicon glyphicon-remove form-control-feedback' aria-hidden='true'></span>";
+		var campo_class="form-group has-error has-feedback";
+		var input_aria="inputError2Status";
+		var span_class="glyphicon glyphicon-remove form-control-feedback";
+		var span_aria="true";
+		/*Para Limpiar*/
+		var campo_class_l="form-group";
+		var span_class_l="";
+		var span_aria_l="";
+
+		var validarUser=function(e){
+			if(form.user.value==0){
+
+				e.preventDefault();
+				document.getElementById("campo-user").setAttribute("class",campo_class);
+				document.getElementById("span-user").setAttribute("class",span_class);
+			    document.getElementById("span-user").setAttribute("aria-hidden",span_aria);
+				document.getElementById("input-user").setAttribute("aria-describedby",input_aria);
+				document.getElementById("input-user").setAttribute("placeholder","Tiene que llenar el campo usuario");
+
+			};
+		};
+		var validarContraceña=function(e){
+			if(form.pass.value==0){
+
+			   e.preventDefault();
+			   document.getElementById("campo-pass").setAttribute("class",campo_class);
+			   document.getElementById("span-pass").setAttribute("class",span_class);
+			   document.getElementById("span-pass").setAttribute("aria-hidden",span_aria);
+			   document.getElementById("input-pass").setAttribute("aria-describedby",input_aria);
+			   document.getElementById("input-pass").setAttribute("placeholder","Tiene que llenar el campo contraseña");
+
+			};
+		};
+		var validar=function(e){
+			validarUser(e);
+			validarContraceña(e);
+		};
+		var limpiarUser=function(e){
+			document.getElementById("campo-user").setAttribute("class",campo_class_l);
+				document.getElementById("span-user").removeAttribute("class");
+			    document.getElementById("span-user").removeAttribute("aria-hidden");
+				document.getElementById("input-user").removeAttribute("aria-describedby");
+		};
+		var limpiarPass=function(e){
+			document.getElementById("campo-pass").setAttribute("class",campo_class_l);
+				document.getElementById("span-pass").removeAttribute("class");
+			    document.getElementById("span-pass").removeAttribute("aria-hidden");
+				document.getElementById("input-pass").removeAttribute("aria-describedby");
+		};
+		form.addEventListener("submit",validar);
+		input_usuario.addEventListener("keypress", limpiarUser);
+		input_pass.addEventListener("keypress", limpiarPass);
+	}())
+	</script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
