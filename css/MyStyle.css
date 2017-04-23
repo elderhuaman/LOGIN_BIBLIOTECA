@@ -22,7 +22,10 @@ h4{
 	text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
 }
 .bbl{
-	color: #8d8d8d;
+	color: #59d467;
+}
+.bbl2{
+    color: #f06969;
 }
 .curs{
 	font-style: italic;
@@ -32,7 +35,7 @@ h4{
 }
 
 .fondo-walpaper{
-   background: url(../img/Books-2.jpg) no-repeat fixed center;
+   background: url(../img/colorful-books-wallpaper-64993.jpg) no-repeat fixed center;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
