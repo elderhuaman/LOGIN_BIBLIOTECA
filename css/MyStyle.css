@@ -87,7 +87,7 @@ h4{
 }
 
 .imagen{
-    background:#3ed661
+    background:#3ed661;
 }
 
 .container{
@@ -99,5 +99,5 @@ h4{
 
 
 .caja{
-    background: #1faf40
+    background-color: rgba(55, 212, 55, 0.7);
 }
